@@ -1,0 +1,13 @@
+note: a container image represents binary data that encapsulates an application and all its software dependencies.
+kubectl create secret docker-registory mysecret	--docker-username=masasterqasim --docker-password=*******
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+spec:
+  imagePullSecrets:
+  - name: mysecret
+  containers:
+  - name: mypod
+    image: masterqasim/testimg:1.0
