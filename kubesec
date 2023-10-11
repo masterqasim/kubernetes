@@ -11,3 +11,11 @@ spec:
   containers:
   - name: mypod
     image: masterqasim/testimg:1.0
+
+scan images with trivy
+-download trivy
+-start server
+-scan
+  ./trivy image httpd:2.4.48-apline
+above command will return retun report 
+
