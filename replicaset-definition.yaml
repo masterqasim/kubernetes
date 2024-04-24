@@ -1,0 +1,29 @@
+#repicaset-definition.yaml
+
+apiVerion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: my-replicaset
+  labels:
+    app: myreplica-app
+    tier: frontend
+spec:
+  template:
+    metadata:
+      name: my-app-pod
+      lables:
+        app: myapp
+        tier: frontend
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx
+  replicas: 3
+  selector:
+    matchlabels:
+      app: myapp
+
+#replication controller are deprecated, use replicaset instead
+# kubectl create -f replicaset-definition.yaml
+# kubectl get replicasets
+        
