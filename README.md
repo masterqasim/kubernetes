@@ -16,3 +16,4 @@ kubectl config set-context $(kubectl config current-context) --namespace=dev
 if you changed the default context and want to see the actual defual then run kubectl get pods --namespace=default
 
 kubectl get pods --all-namespaces
+
