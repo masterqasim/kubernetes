@@ -11,4 +11,4 @@ spec:
     limits.cpu: "10"
     limits.memory: 10Gi
 
-    # kubectl create -f quota-example.yaml
+# kubectl create -f quota-example.yaml

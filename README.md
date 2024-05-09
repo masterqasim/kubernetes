@@ -17,3 +17,6 @@ if you changed the default context and want to see the actual defual then run ku
 
 kubectl get pods --all-namespaces
 
+access service in different namespace 
+
+service-y.namespace-b.svc.cluster.local
