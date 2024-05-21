@@ -47,3 +47,8 @@ kubectl apply -f /path/to/config-files
 update objects
 kubectl apply -f nginx.yaml
 
+kubectl get pods -n kube-system
+
+# lables and sellectors
+ kubectl get pods --selector app=app1
+ 

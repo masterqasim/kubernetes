@@ -91,3 +91,10 @@ Both the above commands have their own challenges. While one of it cannot accept
 https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
 
 https://kubernetes.io/docs/reference/kubectl/conventions/
+
+
+kubectl create ns dev-ns
+kubectl create redis-deply --image=redis -n dev-ns --replicas=2
+error: unknown flag: --image
+kubectl run httpd --image-httpd:alpine
+kubectl expose pod httpd --name=httpd --port=80 
