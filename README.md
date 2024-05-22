@@ -51,4 +51,9 @@ kubectl get pods -n kube-system
 
 # lables and sellectors
  kubectl get pods --selector app=app1
+
+ kubectl get pods --selector env=prod,tier=frontend,bu=finance
+
+ # replica sets
+ kubectl get replicaset
  
