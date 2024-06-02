@@ -54,6 +54,24 @@ kubectl get pods -n kube-system
 
  kubectl get pods --selector env=prod,tier=frontend,bu=finance
 
- # replica sets
+# replica sets
  kubectl get replicaset
+
+# get all
+ kubectl get all --selector key=value
+
+# count
+kubectl get pods | wc -l   ->this command count lines with headers so the right command would be
+
+kubectl get pods --no-headers | wc -l
+
+# taint and tolerence
+taint is a color/spray tolerence is ability of pods to digest/tolerate that taint 
+eg: if we paint/taint blue on one node and bydefault all pods are untolerent to blue and if we make some pods tolerent to blue then only those pods will be able to run/deploy on that node  
+
+taint only restrict other pods to run on tainted node but paint on the pod does not restrict pod to run on a specific node
  
+
+
+taint on nodes
+paint on pods
