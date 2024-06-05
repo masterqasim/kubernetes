@@ -75,3 +75,7 @@ taint only restrict other pods to run on tainted node but paint on the pod does 
 
 taint on nodes
 paint on pods
+
+kubectl describe node kubemaster | grep Taint
+<!-- Taint: master:NoShedule -->
+
