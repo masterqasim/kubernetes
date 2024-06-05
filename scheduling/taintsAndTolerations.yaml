@@ -12,5 +12,6 @@ spec:
     imagePullPolicy: IfNotPresent
   tolerations:
   - key: "example-key"
-    operator: "Exists"
+    operator: "Equals"
+    value: "example-value"
     effect: "NoSchedule"
