@@ -60,6 +60,12 @@ kubectl get pods -n kube-system
 # get all
  kubectl get all --selector key=value
 
+ # Enhance view
+
+ kubectl get pods --watch
+ kubectl get pods -o wide
+ 
+
 # count
 kubectl get pods | wc -l   ->this command count lines with headers so the right command would be
 

@@ -15,3 +15,4 @@ kubectl run bee --image=nginx --dry-run=client -o yaml> bee.yaml
 indendation after colon is must
 eg
 key: "example-key"
+
